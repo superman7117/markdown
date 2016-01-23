@@ -1,6 +1,6 @@
 'use strict';
 
-var PORT = 4000;
+var PORT = 4000 || process.env.PORT;
 // var DATAFILE = './todos.json';
 
 var express = require('express');
