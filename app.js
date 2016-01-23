@@ -20,13 +20,9 @@ app.get("/", function(req, res){
   res.send(html)
 });
 
-app.post('/squack', function(req, res) {
-    var squack = req.body.squack
-    var speak = marked(squack)
-    console.log(speak);
-    res.send(speak);
 
-});
+
+app.use('/squack', require('./router/router.js'));
 
 
 app.listen(PORT, function() {
