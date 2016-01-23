@@ -1,0 +1,40 @@
+body{
+  background-image: url('http://i125.photobucket.com/albums/p41/Into_The_Twilight/Static.gif');
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-between;;
+  align-items: center;;
+}
+
+#titler {
+  color: turquoise;
+width: 100vw;
+  height: 70vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 15vw;
+  text-align: center;
+  font-size: 8vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  margin-top: : -5vw;
+}
+
+#textForTranslation, #display {
+  background-color: white;
+  margin-top: 20vw;
+  border: 2vw solid black;
+  width: 40vw;
+  height: 70vw;
+  overflow: scroll;
+}
+
+#magicBTN{
+  border-radius: 1vw;
+  border:  solid black;
+  height: 8vw;
+  background-color: turquoise
+
+}
