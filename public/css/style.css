@@ -10,31 +10,35 @@ body{
 #titler {
   color: turquoise;
 width: 100vw;
-  height: 70vw;
   position: fixed;
   top: 0;
   left: 0;
-  height: 15vw;
+  height: 10vw;
   text-align: center;
   font-size: 8vw;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 10;
-  margin-top: : -5vw;
+  margin-top: 0;
 }
 
 #textForTranslation, #display {
   background-color: white;
-  margin-top: 20vw;
+  margin-top: 10vw;
   border: 2vw solid black;
   width: 40vw;
   height: 70vw;
   overflow: scroll;
 }
 
+#textForTranslation{
+  resize: none;
+}
 #magicBTN{
   border-radius: 1vw;
   border:  solid black;
   height: 8vw;
   background-color: turquoise
-
+}
+#display{
+  word-wrap: break-word;
 }

@@ -3,7 +3,8 @@
 $(document).ready(init);
 
 function init() {
-  $('#textForTranslation').keyup(markdownMaker);
+  $('#textForTranslation').keyup( debounce(markdownMaker, 250) );
+  $('#textForTranslation').focus();
 }
 
 function markdownMaker(){
@@ -14,12 +15,27 @@ function markdownMaker(){
     console.log(html);
     $("#display").empty().append(html)
   })
-    .fail(function(err) {
-      console.log(err);
-      // alert('something went wrong :(')
-    });
+  .fail(function(err) {
+    console.log(err);
+    // alert('something went wrong :(')
+  });
 
 }
+
+
+function debounce(func, wait) {
+  var timeout;              //Why is this set to nothing?
+  return function() {
+
+    clearTimeout(timeout);   // If timeout was just set to nothing, what can be cleared?
+    timeout = setTimeout(() => {
+      timeout = null;
+      func.apply(this, arguments);
+    }, wait);
+  };
+};
+
+
 //
 // function addName() {
 //   var newName = $('#newName').val();
