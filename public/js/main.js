@@ -5,6 +5,7 @@ $(document).ready(init);
 function init() {
   $('#textForTranslation').keyup( debounce(markdownMaker, 250) );
   $('#textForTranslation').focus();
+  markdownMaker();
 }
 
 function markdownMaker(){

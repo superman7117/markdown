@@ -9,7 +9,7 @@ body{
 
 #titler {
   color: turquoise;
-width: 100vw;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,24 +21,36 @@ width: 100vw;
   margin-top: 0;
 }
 
+.innerHeader {
+  color: turquoise;
+  height: 5vw;
+  text-align: center;
+  font-size: 3vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 40vw;
+  border: 2vw solid black;
+  border-bottom: 0;
+  margin-bottom: -1vw;
+}
+.boxer{
+  margin-top: 10vw;
+  background-color: black;
+}
+
 #textForTranslation, #display {
   background-color: white;
-  margin-top: 10vw;
   border: 2vw solid black;
   width: 40vw;
-  height: 70vw;
+  height: 50vw;
+  max-height: 60vh;
   overflow: scroll;
 }
 
 #textForTranslation{
   resize: none;
+  width: 40vw;
 }
-#magicBTN{
-  border-radius: 1vw;
-  border:  solid black;
-  height: 8vw;
-  background-color: turquoise
-}
+
 #display{
   word-wrap: break-word;
 }
